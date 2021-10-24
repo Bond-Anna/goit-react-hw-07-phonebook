@@ -6,9 +6,9 @@ export const App = () => {
   return (
     <div className="App">
       <h1 className="title">Phonebook</h1>
-      <Form />
+      {/* <Form /> */}
       <h2 className="title">Contacts</h2>
-      <Filter />
+      {/* <Filter /> */}
       <ContactList />
     </div>
   );

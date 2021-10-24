@@ -11,11 +11,14 @@ const contactList = [
 
 console.log(contactsActions);
 
-const items = createReducer(contactList, {
-  [contactsActions.addContact]: (state, action) => [action.payload, ...state],
-  [contactsActions.deleteContact]: (state, action) =>
-    state.filter((contact) => contact.id !== action.payload),
-});
+const items = createReducer(
+  { contactList },
+  {
+    [contactsActions.addContact]: (state, action) => [action.payload, ...state],
+    [contactsActions.deleteContact]: (state, action) =>
+      state.filter((contact) => contact.id !== action.payload),
+  }
+);
 
 const filter = createReducer("", {
   [contactsActions.contactsFilter]: (state, action) => action.payload,

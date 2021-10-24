@@ -1,4 +1,4 @@
-import { connect, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import contactsActions from "../../redux/contacts/contacts-actions";
 import css from "./filter.module.css";
 
