@@ -23,10 +23,8 @@ export const App = () => {
       <h1 className="title">Phonebook</h1>
       <Form />
       <h2 className="title">Contacts</h2>
-      {isSuccess && contacts.lengs !== 0 ? (
+      {isSuccess && contacts.lengs !== 0 && (
         <Filter value={filter} onChange={onFilterChange} />
-      ) : (
-        <h3>no contacts</h3>
       )}
       {isLoading && <Spinner />}
       {isSuccess && (
