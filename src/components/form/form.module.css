@@ -27,6 +27,7 @@
   border-radius: 4px;
 }
 .formBtn {
+  display: flex;
   cursor: pointer;
   font-size: 15px;
   width: 320px;
@@ -38,7 +39,7 @@
   border-radius: 5px;
   border: 1px solid rgb(157, 178, 205);
 }
-.formBtn:hover,
+.formBtn:not([disabled]):hover,
 .formBtn:active {
   font-weight: 600;
   background-color: rgba(198, 220, 233, 0.882);
